@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 DJOSER = {
     # Set this to the field you want to use as the user identifier (e.g., 'username' or 'email')
-    "USER_ID_FIELD": "arasgungore"
+    "USER_ID_FIELD": "username"
 }
 
 REST_FRAMEWORK = {
@@ -96,12 +96,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LittleLemon',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'password',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
     }
 }
 
